@@ -36,5 +36,16 @@ module SaasProjectApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.default_url_options = { host: 'http://127.0.0.1:3500' }
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.mailtrap.io",
+      :port                 => 587,
+      :user_name            => "64abe792e4184a",
+      :password             => "495c4f4ca17854",
+      :authentication       => "plain",
+      :enable_starttls_auto => true
+    }
   end
 end

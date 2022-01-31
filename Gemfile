@@ -31,6 +31,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Allows for .env files
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
+gem 'acts_as_tenant'
+
+# Devise for authentication
+gem 'devise'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -38,7 +43,7 @@ group :development, :test do
   # Add rspec for testing
   gem 'rspec-rails'
   # Factory for generating resources for testing
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   # Database cleaner to clean the db after each test
   gem 'database_cleaner'
   # Faker for generating fake data
