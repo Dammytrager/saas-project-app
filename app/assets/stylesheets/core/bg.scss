@@ -1,0 +1,51 @@
+@import "variables/variables";
+
+.bg {
+  &-transparent {
+    background: $transparent;
+  }
+
+  &-alt-primary {
+    background-color: $primary-blue $im;
+  }
+
+  &-alt-success {
+    background-color: $bg-alt-success $im;
+  }
+
+  &-danger {
+    background-color: $bg-alt-danger $im;
+  }
+
+  &-success {
+    background-color: $success-color $im;
+  }
+
+  &-warning {
+    background-color: $warning-color $im;
+  }
+
+  &-info {
+    background-color: $info-color;
+  }
+
+  &-corporate {
+    background-color: $corporate-color;
+  }
+
+  &-flat {
+    background-color: $flat-color;
+  }
+
+  &-pulse {
+    background-color: $pulse-color;
+  }
+
+  &-elegance {
+    background-color: $elegance-color;
+  }
+
+  &-body-light {
+    background-color: $body-light-color;
+  }
+}

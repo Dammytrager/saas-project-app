@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SaasProjectApp</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body class="devise bg-body-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light devise-nav justify-content-center">
+    <a class="navbar-brand text-white font-w600 font-size-lg" href="#">Project management App</a>
+  </nav>
+
+  <div class="devise-body">
+    <div class="devise-body-card box-shadow bg-white p-4">
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>
